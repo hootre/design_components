@@ -1,6 +1,6 @@
 import { CircularNavBox, ListItem } from "./styles";
 import Icon from "@mui/material/Icon";
-import { useCallback, useState } from "react";
+import { useCallback, useState, VFC } from "react";
 
 type itemId = {
   // Index Signature 선언하영 string으로 객체 접근
@@ -15,20 +15,13 @@ type itemId = {
   sports_esports: boolean;
   photo_camera: boolean;
 };
-
+interface Props {
+  itemList: string[];
+}
 //  menu item List
-const itemList = [
-  "home",
-  "person",
-  "settings",
-  "email",
-  "videocam",
-  "vpn_key",
-  "sports_esports",
-  "photo_camera",
-];
-export function CircularNav() {
-  const [navState, setNavState] = useState(false);
+
+export const CircularNav: VFC<Props> = ({ itemList }) => {
+  const [navActiveState, setNavActiveState] = useState(false);
   const [itemState, setItemState] = useState<itemId>({
     home: false,
     person: false,
@@ -45,9 +38,9 @@ export function CircularNav() {
     (e) => {
       e.preventDefault();
       e.stopPropagation();
-      setNavState((prev) => !prev);
+      setNavActiveState((prev) => !prev);
     },
-    [navState]
+    [navActiveState]
   );
 
   // menu item active
@@ -55,6 +48,7 @@ export function CircularNav() {
     (e) => {
       e.preventDefault();
       e.stopPropagation();
+      // menu li toggle
       const newItemState = { ...itemState };
       const { id } = e.currentTarget;
       for (let key in newItemState) {
@@ -70,10 +64,10 @@ export function CircularNav() {
   return (
     <CircularNavBox>
       <div
-        className={navState ? "menu active" : "menu"}
+        className={navActiveState ? "menu active" : "menu"}
         onClick={onToggleActive}
       >
-        <div className={navState ? "toggle active" : "toggle"}>
+        <div className={navActiveState ? "toggle active" : "toggle"}>
           <Icon>add</Icon>
         </div>
         {itemList.map((item, index) => {
@@ -81,11 +75,12 @@ export function CircularNav() {
             <ListItem
               id={item}
               num={index}
+              length={itemList.length}
               onClick={onItemToggleActive}
               className={itemState[item] ? " active " : ""}
             >
               <a href="#">
-                <Icon>{item}</Icon>
+                <Icon baseClassName="material-icons-outlined">{item}</Icon>
               </a>
             </ListItem>
           );
@@ -95,4 +90,4 @@ export function CircularNav() {
       </div>
     </CircularNavBox>
   );
-}
+};

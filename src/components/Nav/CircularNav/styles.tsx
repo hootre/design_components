@@ -2,8 +2,10 @@ import styled from "@emotion/styled";
 
 type ListProps = {
   num: number;
+  length: number;
 };
 export const CircularNavBox = styled.ul`
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -78,7 +80,8 @@ export const ListItem = styled.li<ListProps>`
   list-style: none;
   visibility: hidden;
   opacity: 0;
-  transform: rotate(calc(360deg / 8 * ${(props) => props.num})) translateX(40px);
+  transform: rotate(calc(${(props) => (360 / props.length) * props.num}deg))
+    translateX(40px);
   transform-origin: 140px;
   transition: 0.5s;
   z-index: 10;
@@ -91,15 +94,16 @@ export const ListItem = styled.li<ListProps>`
     font-size: 1.75rem;
     color: #000;
     border-radius: 50%;
-    transform: rotate(calc(360deg / -8 * ${(props) => props.num}));
+    transform: rotate(calc(${(props) => (360 / -props.length) * props.num}deg));
   }
   &.active {
-    transform: rotate(calc(360deg / 8 * ${(props) => props.num}))
+    transform: rotate(calc(${(props) => (360 / props.length) * props.num}deg))
       translateX(12px);
   }
 
   &.active ~ .indicator {
     left: calc(50% + 2.5px);
-    transform: translateX(-103px) rotate(${(props) => props.num * 45}deg);
+    transform: translateX(-103px)
+      rotate(${(props) => (props.num * 360) / props.length}deg);
   }
 `;
