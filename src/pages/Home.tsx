@@ -3,7 +3,7 @@ import { CircularNav } from "../components/Nav/CircularNav";
 import ContentLayout from "../layouts/ContentLayout";
 import Safari3D from "../components/Logo/Safari3D";
 import { DotsMenu } from "../components/Menu/DotsMenu";
-import { MagicIndicator } from "../components/Menu/MagicIndicator";
+import { MagicIndicator_1 } from "../components/Menu/MagicIndicator_1";
 import { SideBar_1 } from "../components/Nav/SideBar_1";
 
 const IconitemList_5 = ["home", "person", "settings", "email", "videocam"];
@@ -54,7 +54,7 @@ const Home: VFC<{}> = () => {
         num={4}
         title="CSS 9 Dots Menu | Html CSS Icon Hover Effects"
       >
-        <MagicIndicator />
+        <MagicIndicator_1 itemList={IconitemList_5} />
       </ContentLayout>
       <ContentLayout
         height={700}

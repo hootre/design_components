@@ -1,7 +1,6 @@
 import { Icon } from "@mui/material";
 import React, { useCallback, useState, VFC } from "react";
-import { ListItem, SideBar_1Box } from "./styles";
-
+import { ListItem, MagicIndicatorBox } from "./styles";
 type itemId = {
   // Index Signature 선언하영 string으로 객체 접근
   // https://soopdop.github.io/2020/12/01/index-signatures-in-typescript/
@@ -14,10 +13,8 @@ type itemId = {
 };
 interface Props {
   itemList: string[];
-  logoColor: string[];
 }
-export const SideBar_1: VFC<Props> = ({ itemList, logoColor }) => {
-  const [navActiveState, setNavActiveState] = useState(false);
+export const MagicIndicator_1: VFC<Props> = ({ itemList }) => {
   const [navItmeActiveState, setItmeActiveState] = useState<itemId>({
     home: false,
     person: false,
@@ -25,14 +22,6 @@ export const SideBar_1: VFC<Props> = ({ itemList, logoColor }) => {
     email: false,
     videocam: false,
   });
-  const onToggleNavActive = useCallback(
-    (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      setNavActiveState((prev) => !prev);
-    },
-    [navActiveState]
-  );
   const onToggleNavItemActive = useCallback(
     (e) => {
       e.preventDefault();
@@ -52,15 +41,13 @@ export const SideBar_1: VFC<Props> = ({ itemList, logoColor }) => {
     [navItmeActiveState]
   );
   return (
-    <SideBar_1Box>
-      <div className={navActiveState ? "navigation open" : "navigation"}>
-        <div className="menuToggle" onClick={onToggleNavActive}></div>
+    <MagicIndicatorBox>
+      <div className="navigation">
         <ul>
           {itemList.map((item, index) => {
             return (
               <ListItem
                 id={item}
-                logoColor={logoColor[index]}
                 className={navItmeActiveState[item] ? "active" : ""}
                 onClick={onToggleNavItemActive}
               >
@@ -76,8 +63,9 @@ export const SideBar_1: VFC<Props> = ({ itemList, logoColor }) => {
               </ListItem>
             );
           })}
+          <div className="indicator"></div>
         </ul>
       </div>
-    </SideBar_1Box>
+    </MagicIndicatorBox>
   );
 };
