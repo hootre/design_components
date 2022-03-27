@@ -2,29 +2,20 @@ import { Icon } from "@mui/material";
 import React, { useCallback, useState, VFC } from "react";
 import { ListItem, SideBar_1Box } from "./styles";
 
-type itemId = {
-  // Index Signature 선언하영 string으로 객체 접근
-  // https://soopdop.github.io/2020/12/01/index-signatures-in-typescript/
-  [key: string]: boolean;
-  home: boolean;
-  person: boolean;
-  settings: boolean;
-  email: boolean;
-  videocam: boolean;
-};
-interface Props {
-  itemList: string[];
-  logoColor: string[];
-}
-export const SideBar_1: VFC<Props> = ({ itemList, logoColor }) => {
+const itemList = ["home", "person", "settings", "email", "videocam"];
+const logoColor = ["#f44336", "#ffa117", "#0fc70f", "#2196f3", "#b145e9"];
+export const SideBar_1: VFC = () => {
   const [navActiveState, setNavActiveState] = useState(false);
-  const [navItmeActiveState, setItmeActiveState] = useState<itemId>({
-    home: false,
-    person: false,
-    settings: false,
-    email: false,
-    videocam: false,
-  });
+  // menu item active
+  const [navItmeActiveState, setItmeActiveState] = useState(0);
+  const onToggleNavItemActive = useCallback(
+    (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      setItmeActiveState(e.currentTarget.id);
+    },
+    [navItmeActiveState]
+  );
   const onToggleNavActive = useCallback(
     (e) => {
       e.preventDefault();
@@ -33,24 +24,7 @@ export const SideBar_1: VFC<Props> = ({ itemList, logoColor }) => {
     },
     [navActiveState]
   );
-  const onToggleNavItemActive = useCallback(
-    (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      // menu li toggle
-      const newItemState = { ...navItmeActiveState };
-      const { id } = e.currentTarget;
-      for (let key in newItemState) {
-        if (e.currentTarget.className.includes("active")) {
-        } else {
-          key === id ? (newItemState[key] = true) : (newItemState[key] = false);
-          setItmeActiveState(newItemState);
-        }
-      }
-      console.log(newItemState);
-    },
-    [navItmeActiveState]
-  );
+
   return (
     <SideBar_1Box>
       <div className={navActiveState ? "navigation open" : "navigation"}>
@@ -59,9 +33,9 @@ export const SideBar_1: VFC<Props> = ({ itemList, logoColor }) => {
           {itemList.map((item, index) => {
             return (
               <ListItem
-                id={item}
+                id={"" + index}
                 logoColor={logoColor[index]}
-                className={navItmeActiveState[item] ? "active" : ""}
+                className={navItmeActiveState == index ? "active" : ""}
                 onClick={onToggleNavItemActive}
               >
                 <a href="#">

@@ -5,30 +5,12 @@ import Safari3D from "../components/Logo/Safari3D";
 import { DotsMenu } from "../components/Menu/DotsMenu";
 import { MagicIndicator_1 } from "../components/Menu/MagicIndicator_1";
 import { SideBar_1 } from "../components/Nav/SideBar_1";
+import { ClaymorphismList_1 } from "../components/List/ClaymorphismList_1";
 
-const IconitemList_5 = ["home", "person", "settings", "email", "videocam"];
-const logoColor = ["#f44336", "#ffa117", "#0fc70f", "#2196f3", "#b145e9"];
-const IconitemList_8 = [
-  "home",
-  "person",
-  "settings",
-  "email",
-  "videocam",
-  "vpn_key",
-  "sports_esports",
-  "photo_camera",
-];
-const IconitemList_9 = [
-  "home",
-  "person",
-  "settings",
-  "email",
-  "videocam",
-  "vpn_key",
-  "sports_esports",
-  "photo_camera",
-  "favorite_border",
-];
+const itemComponents = {
+  0: <CircularNav />,
+};
+
 const Home: VFC<{}> = () => {
   return (
     <>
@@ -36,7 +18,7 @@ const Home: VFC<{}> = () => {
         num={1}
         title="Animated Circular Navigation Menu Magic Indicator"
       >
-        <CircularNav itemList={IconitemList_8} />
+        <CircularNav />
       </ContentLayout>
       <ContentLayout
         num={2}
@@ -48,20 +30,24 @@ const Home: VFC<{}> = () => {
         num={3}
         title="CSS 9 Dots Menu | Html CSS Icon Hover Effects"
       >
-        <DotsMenu itemList={IconitemList_9} />
+        <DotsMenu />
       </ContentLayout>
-      <ContentLayout
-        num={4}
-        title="CSS 9 Dots Menu | Html CSS Icon Hover Effects"
-      >
-        <MagicIndicator_1 itemList={IconitemList_5} />
+      <ContentLayout num={4} title="Magic Navigation Menu Indicator">
+        <MagicIndicator_1 />
       </ContentLayout>
       <ContentLayout
         height={700}
         num={5}
         title="Sidebar Menu using Html CSS & Javascript"
       >
-        <SideBar_1 itemList={IconitemList_5} logoColor={logoColor} />
+        <SideBar_1 />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={6}
+        title="Claymorphism List Hover Effects"
+      >
+        <ClaymorphismList_1 />
       </ContentLayout>
     </>
   );

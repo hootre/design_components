@@ -7,10 +7,18 @@ const menuItemPosition = {
   x: [-1, 1, 0, 0, 1, -1, 0, -1, 1],
   y: [0, 0, -1, 1, 1, -1, 0, 1, -1],
 };
-interface Props {
-  itemList: string[];
-}
-export const DotsMenu: VFC<Props> = ({ itemList }) => {
+const itemList = [
+  "home",
+  "person",
+  "settings",
+  "email",
+  "videocam",
+  "vpn_key",
+  "sports_esports",
+  "photo_camera",
+  "favorite_border",
+];
+export const DotsMenu: VFC = () => {
   const [dotsState, setDotsState] = useState(false);
   // menu on/off
   const onToggleActive = useCallback(

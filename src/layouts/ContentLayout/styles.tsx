@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 export const Section_contaioner = styled.section`
   height: 30rem;
   padding: 2rem;
+
   header {
     display: inline;
   }
