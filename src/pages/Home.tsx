@@ -6,6 +6,7 @@ import { DotsMenu } from "../components/Menu/DotsMenu";
 import { MagicIndicator_1 } from "../components/Menu/MagicIndicator_1";
 import { SideBar_1 } from "../components/Nav/SideBar_1";
 import { ClaymorphismList_1 } from "../components/List/ClaymorphismList_1";
+import { Card_1 } from "../components/Card/Card_1";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -48,6 +49,13 @@ const Home: VFC<{}> = () => {
         title="Claymorphism List Hover Effects"
       >
         <ClaymorphismList_1 />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={6}
+        title="Claymorphism List Hover Effects"
+      >
+        <Card_1 />
       </ContentLayout>
     </>
   );

@@ -14,9 +14,8 @@ export const ListItem = styled.li<ListProps>`
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 100px;
-    text-align: center;
+    text-align: left;
     .icon {
       position: absolute;
       left: 0;
@@ -41,10 +40,10 @@ export const ListItem = styled.li<ListProps>`
     }
     .text {
       position: relative;
-      padding: 0 15px 0 90px;
+      align-items: center;
+      padding: 0 15px 0 70px;
       height: 60px;
       display: flex;
-      align-items: center;
       color: #333;
       opacity: 0;
       visibility: hidden;

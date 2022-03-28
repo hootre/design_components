@@ -7,7 +7,7 @@ export const Section_contaioner = styled.section`
   header {
     display: inline;
   }
-  .content {
+  .layout_content {
     background-color: #7f53ac;
     background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
     width: 100%;

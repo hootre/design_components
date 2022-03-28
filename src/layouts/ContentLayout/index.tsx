@@ -13,7 +13,7 @@ const ContentLayout: FC<ContentLayoutProps> = ({
 }) => {
   return (
     <Section_contaioner style={{ height: height }} className="container">
-      <div className="content">
+      <div className="layout_content">
         <header>
           <h1 className="titleNum">
             {num}.<span className="titleText">{title}</span>
