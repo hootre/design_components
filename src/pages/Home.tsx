@@ -7,6 +7,7 @@ import { MagicIndicator_1 } from "../components/Menu/MagicIndicator_1";
 import { SideBar_1 } from "../components/Nav/SideBar_1";
 import { ClaymorphismList_1 } from "../components/List/ClaymorphismList_1";
 import { Card_1 } from "../components/Card/Card_1";
+import { LoginForm } from "../components/Glassmorphism/LoginForm";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -52,10 +53,17 @@ const Home: VFC<{}> = () => {
       </ContentLayout>
       <ContentLayout
         height={700}
-        num={6}
-        title="Claymorphism List Hover Effects"
+        num={7}
+        title="CSS Responsive Card Hover Effects"
       >
         <Card_1 />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={8}
+        title="Glassmorphism Login Form using Html & CSS "
+      >
+        <LoginForm />
       </ContentLayout>
     </>
   );

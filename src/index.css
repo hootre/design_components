@@ -3,6 +3,8 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
-html {
-  list-style: none;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
+body {
+  font-size: 10px;
+  font-family: "Noto Sans KR", sans-serif;
 }

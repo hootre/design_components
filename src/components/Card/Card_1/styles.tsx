@@ -31,8 +31,7 @@ export const Card_1Box = styled.div`
         .content {
           visibility: visible;
           opacity: 1;
-          margin-top: -40px;
-          transition-delay: 0.3s;
+          transition-delay: 0.2s;
         }
       }
       .imgBx {
@@ -52,13 +51,13 @@ export const Card_1Box = styled.div`
           font-weight: bold;
         }
         position: relative;
-        margin-top: -140px;
+        margin-top: -80px;
         padding: 10px 15px;
         text-align: center;
         color: #111;
         visibility: hidden;
         opacity: 0;
-        transition: 0.3s ease-in-out;
+        transition: 0.1s ease-in-out;
       }
     }
   }

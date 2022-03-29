@@ -5,7 +5,7 @@ const AppLayout: FC<{}> = ({ children }) => {
   return (
     <>
       <Header />
-      <div className="grid gap-4 grid-cols-2">
+      <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 ">
         <Outlet />
       </div>
     </>
