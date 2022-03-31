@@ -8,6 +8,7 @@ import { SideBar_1 } from "../components/Nav/SideBar_1";
 import { ClaymorphismList_1 } from "../components/List/ClaymorphismList_1";
 import { Card_1 } from "../components/Card/Card_1";
 import { LoginForm } from "../components/Glassmorphism/LoginForm";
+import { CirCleLoader } from "../components/Animation/CirCleLoader";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -64,6 +65,13 @@ const Home: VFC<{}> = () => {
         title="Glassmorphism Login Form using Html & CSS "
       >
         <LoginForm />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={9}
+        title="Glassmorphism Login Form using Html & CSS "
+      >
+        <CirCleLoader />
       </ContentLayout>
     </>
   );
