@@ -1,15 +1,15 @@
 import React from "react";
-import { CirCleLoaderBox } from "./styles";
+import { CircleLoaderBox } from "./styles";
 
-export const CirCleLoader = () => {
+export const CircleLoader = () => {
   return (
-    <CirCleLoaderBox>
+    <CircleLoaderBox>
       <div className="loader">
         <div className="circle"></div>
 
         <div className="circle circle2"></div>
         <div className="circle circle3"></div>
       </div>
-    </CirCleLoaderBox>
+    </CircleLoaderBox>
   );
 };

@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 type ListProps = {};
-export const CirCleLoaderBox = styled.div`
+export const CircleLoaderBox = styled.div`
   position: relative;
   width: 100%;
   height: 100%;

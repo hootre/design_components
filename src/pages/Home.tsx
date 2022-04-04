@@ -8,7 +8,8 @@ import { SideBar_1 } from "../components/Nav/SideBar_1";
 import { ClaymorphismList_1 } from "../components/List/ClaymorphismList_1";
 import { Card_1 } from "../components/Card/Card_1";
 import { LoginForm } from "../components/Glassmorphism/LoginForm";
-import { CirCleLoader } from "../components/Animation/CirCleLoader";
+import { CircleLoader } from "../components/Animation/CirCleLoader";
+import { Button_1 } from "../components/Glassmorphism/Button_1";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -71,7 +72,14 @@ const Home: VFC<{}> = () => {
         num={9}
         title="Glassmorphism Login Form using Html & CSS "
       >
-        <CirCleLoader />
+        <CircleLoader />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={10}
+        title="CSS Glassmorphism Button Hover Effects"
+      >
+        <Button_1 />
       </ContentLayout>
     </>
   );
