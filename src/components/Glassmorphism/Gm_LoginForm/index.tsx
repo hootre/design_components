@@ -15,7 +15,7 @@ interface State {
   showPassword: boolean;
 }
 const backSquare = [0, 1, 2, 3, 4];
-export const LoginForm = () => {
+export const Gm_LoginForm = () => {
   const [values, setValues] = React.useState<State>({
     username: "",
     password: "",

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button_1Box } from "./styles";
 
-export const Button_1 = () => {
+export const Gm_Button_1 = () => {
   return (
     <Button_1Box>
       <div className="container">

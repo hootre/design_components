@@ -7,9 +7,10 @@ import { MagicIndicator_1 } from "../components/Menu/MagicIndicator_1";
 import { SideBar_1 } from "../components/Nav/SideBar_1";
 import { ClaymorphismList_1 } from "../components/List/ClaymorphismList_1";
 import { Card_1 } from "../components/Card/Card_1";
-import { LoginForm } from "../components/Glassmorphism/LoginForm";
+import { Gm_LoginForm } from "../components/Glassmorphism/Gm_LoginForm";
 import { CircleLoader } from "../components/Animation/CirCleLoader";
-import { Button_1 } from "../components/Glassmorphism/Button_1";
+import { Gm_Button_1 } from "../components/Glassmorphism/Gm_Button_1";
+import { Gm_Calculator } from "../components/Glassmorphism/Gm_Calculator";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -65,7 +66,7 @@ const Home: VFC<{}> = () => {
         num={8}
         title="Glassmorphism Login Form using Html & CSS "
       >
-        <LoginForm />
+        <Gm_LoginForm />
       </ContentLayout>
       <ContentLayout
         height={700}
@@ -79,7 +80,14 @@ const Home: VFC<{}> = () => {
         num={10}
         title="CSS Glassmorphism Button Hover Effects"
       >
-        <Button_1 />
+        <Gm_Button_1 />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={11}
+        title="How to make Calculator With JavaScript"
+      >
+        <Gm_Calculator />
       </ContentLayout>
     </>
   );
