@@ -1948,6 +1948,11 @@ react-is@^17.0.2:
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
+react-parallax-tilt@^1.6.7:
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.6.7.tgz#498cfe3c452c6c8b1fba3a3a6bf04a4a79360e03"
+  integrity sha512-S1NQtvqHRPyJPoXZohor959nhh/JLcyOh0e3t5rF4NfOP6RalO1YnT03r3AOqZ38omwmfy5sGwliHIhR6NfqTg==
+
 react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.11.0.tgz"

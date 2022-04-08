@@ -11,6 +11,7 @@ import { Gm_LoginForm } from "../components/Glassmorphism/Gm_LoginForm";
 import { CircleLoader } from "../components/Animation/CirCleLoader";
 import { Gm_Button_1 } from "../components/Glassmorphism/Gm_Button_1";
 import { Gm_Calculator } from "../components/Glassmorphism/Gm_Calculator";
+import { Gm_CardHover } from "../components/Glassmorphism/Gm_CardHover";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -88,6 +89,13 @@ const Home: VFC<{}> = () => {
         title="How to make Calculator With JavaScript"
       >
         <Gm_Calculator />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={12}
+        title="Responsive Glassmorphism Card Hover Effects"
+      >
+        <Gm_CardHover />
       </ContentLayout>
     </>
   );

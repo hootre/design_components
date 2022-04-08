@@ -30,6 +30,9 @@ export const Gm_CalculatorBox = styled.div`
     background: linear-gradient(#ffffff, #da00ff);
     clip-path: circle(20% at 70% 90%);
   }
+  .tilt {
+    z-index: 10;
+  }
   .container {
     position: relative;
     background: rgba(255, 255, 255, 0.05);

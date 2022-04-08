@@ -1,5 +1,6 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { Gm_CalculatorBox } from "./styles";
+import Tilt from "react-parallax-tilt";
 
 type Digit = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 type Operator = "+" | "-" | "×" | "/";
@@ -186,127 +187,142 @@ export const Gm_Calculator = () => {
   };
   return (
     <Gm_CalculatorBox>
-      <div className="container">
-        <div className="calculator">
-          <div className="expression">
-            {typeof pendingOperator !== "undefined"
-              ? `${result}${pendingOperator}${waitingForOperand ? "" : display}`
-              : ""}
+      <Tilt
+        className="tilt"
+        tiltMaxAngleX={40}
+        tiltMaxAngleY={40}
+        perspective={1000}
+        transitionSpeed={1000}
+        gyroscope={true}
+      >
+        <div className="container">
+          <div className="calculator">
+            <div className="expression">
+              {typeof pendingOperator !== "undefined"
+                ? `${result}${pendingOperator}${
+                    waitingForOperand ? "" : display
+                  }`
+                : ""}
+            </div>
+            <div className="value">{display}</div>
+            <button
+              className="num clear"
+              value="c"
+              onClick={onAllClearButtonClick}
+            >
+              c
+            </button>
+            <button
+              className="num"
+              value="/"
+              onClick={() => onOperatorButtonClick("/")}
+            >
+              /
+            </button>
+            <button
+              className="num "
+              value="×"
+              onClick={() => onOperatorButtonClick("×")}
+            >
+              ×
+            </button>
+            <button
+              className="num"
+              value="7"
+              onClick={() => onDigitButtonClick(7)}
+            >
+              7
+            </button>
+            <button
+              className="num"
+              value="8"
+              onClick={() => onDigitButtonClick(8)}
+            >
+              8
+            </button>
+            <button
+              className="num"
+              value="9"
+              onClick={() => onDigitButtonClick(9)}
+            >
+              9
+            </button>
+            <button
+              className="num"
+              value="-"
+              onClick={() => onOperatorButtonClick("-")}
+            >
+              -
+            </button>
+            <button
+              className="num"
+              value="4"
+              onClick={() => onDigitButtonClick(4)}
+            >
+              4
+            </button>
+            <button
+              className="num"
+              value="5"
+              onClick={() => onDigitButtonClick(5)}
+            >
+              5
+            </button>
+            <button
+              className="num"
+              value="6"
+              onClick={() => onDigitButtonClick(6)}
+            >
+              6
+            </button>
+            <button
+              className="num plus"
+              value="+"
+              onClick={() => onOperatorButtonClick("+")}
+            >
+              +
+            </button>
+            <button
+              className="num"
+              value="1"
+              onClick={() => onDigitButtonClick(1)}
+            >
+              1
+            </button>
+            <button
+              className="num"
+              value="2"
+              onClick={() => onDigitButtonClick(2)}
+            >
+              2
+            </button>
+            <button
+              className="num"
+              value="3"
+              onClick={() => onDigitButtonClick(3)}
+            >
+              3
+            </button>
+            <button
+              className="num"
+              value="0"
+              onClick={() => onDigitButtonClick(0)}
+            >
+              0
+            </button>
+            <button className="num" value="." onClick={onPointButtonClick}>
+              .
+            </button>
+            <button
+              className="num equal"
+              value="="
+              onClick={onEqualButtonClick}
+            >
+              =
+            </button>
           </div>
-          <div className="value">{display}</div>
-          <button
-            className="num clear"
-            value="c"
-            onClick={onAllClearButtonClick}
-          >
-            c
-          </button>
-          <button
-            className="num"
-            value="/"
-            onClick={() => onOperatorButtonClick("/")}
-          >
-            /
-          </button>
-          <button
-            className="num "
-            value="×"
-            onClick={() => onOperatorButtonClick("×")}
-          >
-            ×
-          </button>
-          <button
-            className="num"
-            value="7"
-            onClick={() => onDigitButtonClick(7)}
-          >
-            7
-          </button>
-          <button
-            className="num"
-            value="8"
-            onClick={() => onDigitButtonClick(8)}
-          >
-            8
-          </button>
-          <button
-            className="num"
-            value="9"
-            onClick={() => onDigitButtonClick(9)}
-          >
-            9
-          </button>
-          <button
-            className="num"
-            value="-"
-            onClick={() => onOperatorButtonClick("-")}
-          >
-            -
-          </button>
-          <button
-            className="num"
-            value="4"
-            onClick={() => onDigitButtonClick(4)}
-          >
-            4
-          </button>
-          <button
-            className="num"
-            value="5"
-            onClick={() => onDigitButtonClick(5)}
-          >
-            5
-          </button>
-          <button
-            className="num"
-            value="6"
-            onClick={() => onDigitButtonClick(6)}
-          >
-            6
-          </button>
-          <button
-            className="num plus"
-            value="+"
-            onClick={() => onOperatorButtonClick("+")}
-          >
-            +
-          </button>
-          <button
-            className="num"
-            value="1"
-            onClick={() => onDigitButtonClick(1)}
-          >
-            1
-          </button>
-          <button
-            className="num"
-            value="2"
-            onClick={() => onDigitButtonClick(2)}
-          >
-            2
-          </button>
-          <button
-            className="num"
-            value="3"
-            onClick={() => onDigitButtonClick(3)}
-          >
-            3
-          </button>
-          <button
-            className="num"
-            value="0"
-            onClick={() => onDigitButtonClick(0)}
-          >
-            0
-          </button>
-          <button className="num" value="." onClick={onPointButtonClick}>
-            .
-          </button>
-          <button className="num equal" value="=" onClick={onEqualButtonClick}>
-            =
-          </button>
         </div>
-      </div>
+      </Tilt>
     </Gm_CalculatorBox>
   );
 };
