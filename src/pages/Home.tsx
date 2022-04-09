@@ -12,6 +12,7 @@ import { CircleLoader } from "../components/Animation/CirCleLoader";
 import { Gm_Button_1 } from "../components/Glassmorphism/Gm_Button_1";
 import { Gm_Calculator } from "../components/Glassmorphism/Gm_Calculator";
 import { Gm_CardHover } from "../components/Glassmorphism/Gm_CardHover";
+import { Gm_TransitionIcon } from "../components/Glassmorphism/Gm_TransitionIcon";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -96,6 +97,13 @@ const Home: VFC<{}> = () => {
         title="Responsive Glassmorphism Card Hover Effects"
       >
         <Gm_CardHover />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={13}
+        title="Creative Z-Index Transition Icon Hover Effects"
+      >
+        <Gm_TransitionIcon />
       </ContentLayout>
     </>
   );
