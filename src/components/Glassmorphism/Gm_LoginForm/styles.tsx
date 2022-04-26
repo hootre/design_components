@@ -19,20 +19,20 @@ export const LoginFormBox = styled.div`
     .color {
       position: absolute;
       filter: blur(150px);
-      &:nth-child(1) {
+      &:nth-of-type(1) {
         top: -350px;
         width: 100%;
         height: 600px;
         background: #ff359b;
       }
-      &:nth-child(2) {
+      &:nth-of-type(2) {
         bottom: -150px;
         left: 0px;
         width: 500px;
         height: 500px;
         background: #c7c571;
       }
-      &:nth-child(3) {
+      &:nth-of-type(3) {
         bottom: 50px;
         right: 100px;
         width: 300px;
@@ -157,32 +157,32 @@ export const BackSquareBox = styled.div<ListProps>`
       transform: translateY(20px);
     }
   }
-  &:nth-child(1) {
+  &:nth-of-type(1) {
     top: -50px;
     right: -60px;
     width: 100px;
     height: 100px;
   }
-  &:nth-child(2) {
+  &:nth-of-type(2) {
     top: 150px;
     left: -100px;
     width: 120px;
     height: 120px;
     z-index: 2;
   }
-  &:nth-child(3) {
+  &:nth-of-type(3) {
     bottom: 50px;
     right: -60px;
     width: 80px;
     height: 80px;
   }
-  &:nth-child(4) {
+  &:nth-of-type(4) {
     bottom: -80px;
     left: 100px;
     width: 50px;
     height: 50px;
   }
-  &:nth-child(5) {
+  &:nth-of-type(5) {
     top: -80px;
     left: 140px;
     width: 60px;

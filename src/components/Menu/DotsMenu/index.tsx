@@ -35,6 +35,7 @@ export const DotsMenu: VFC = () => {
     for (let i = 0; i < menuItemPosition.l; i++) {
       result.push(
         <MenuItem
+          key={i}
           className={dotsState ? "navActive" : ""}
           i={i}
           x={menuItemPosition.x[i]}

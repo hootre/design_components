@@ -23,21 +23,21 @@ export const Gm_TransitionIconBox = styled.div`
     .color {
       position: absolute;
       filter: blur(150px);
-      &:nth-child(1) {
+      &:nth-of-type(1) {
         left: 0;
         top: -350px;
         background: #ff359b;
         width: 100%;
         height: 600px;
       }
-      &:nth-child(2) {
+      &:nth-of-type(2) {
         right: 0;
         bottom: -150px;
         background: #fffd87;
         width: 500px;
         height: 450px;
       }
-      &:nth-child(3) {
+      &:nth-of-type(3) {
         right: 0;
         bottom: -50px;
         background: #00d2ff;

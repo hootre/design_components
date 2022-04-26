@@ -105,6 +105,13 @@ const Home: VFC<{}> = () => {
       >
         <Gm_TransitionIcon />
       </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={14}
+        title="Real Glassmorphism Card Hover Effects"
+      >
+        <Gm_TransitionIcon />
+      </ContentLayout>
     </>
   );
 };

@@ -104,19 +104,19 @@ export const ListItem = styled.li<ListProps>`
       opacity: 1;
     }
   }
-  &:nth-child(1).active ~ .indicator {
+  &:nth-of-type(1).active ~ .indicator {
     transform: translateX(calc(70px * 0));
   }
-  &:nth-child(2).active ~ .indicator {
+  &:nth-of-type(2).active ~ .indicator {
     transform: translateX(calc(70px * 1));
   }
-  &:nth-child(3).active ~ .indicator {
+  &:nth-of-type(3).active ~ .indicator {
     transform: translateX(calc(70px * 2));
   }
-  &:nth-child(4).active ~ .indicator {
+  &:nth-of-type(4).active ~ .indicator {
     transform: translateX(calc(70px * 3));
   }
-  &:nth-child(5).active ~ .indicator {
+  &:nth-of-type(5).active ~ .indicator {
     transform: translateX(calc(70px * 4));
   }
 `;

@@ -23,6 +23,7 @@ export const Gm_TransitionIcon = () => {
           {itemList.map((item, index) => {
             return (
               <li
+                key={index}
                 id={"" + index}
                 className={navItmeActiveState == index ? "active" : ""}
                 onClick={onToggleNavItemActive}

@@ -105,20 +105,20 @@ export const Button_1Box = styled.div`
           }
         }
       }
-      &:nth-child(1):before,
-      &:nth-child(1):after {
+      &:nth-of-type(1):before,
+      &:nth-of-type(1):after {
         background: #ff1f71;
         box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
           0 0 60px #ff1f71;
       }
-      &:nth-child(2):before,
-      &:nth-child(2):after {
+      &:nth-of-type(2):before,
+      &:nth-of-type(2):after {
         background: #2bd2ff;
         box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff,
           0 0 60px #2bd2ff;
       }
-      &:nth-child(3):before,
-      &:nth-child(3):after {
+      &:nth-of-type(3):before,
+      &:nth-of-type(3):after {
         background: #1eff45;
         box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
           0 0 60px #1eff45;

@@ -24,6 +24,7 @@ export const ClaymorphismList_1: VFC = () => {
         {TextitemList.map((item, index) => {
           return (
             <ListItem
+              key={index}
               id={"" + index}
               className={navItmeActiveState == index ? "list active" : "list"}
               onClick={onToggleNavItemActive}

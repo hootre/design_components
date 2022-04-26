@@ -43,9 +43,10 @@ export const Gm_LoginForm = () => {
         <div className="color"></div>
         <div className="color"></div>
         <div className="box">
-          {backSquare.map((item) => {
+          {backSquare.map((item, index) => {
             return (
-              <BackSquareBox className="square" num={item}></BackSquareBox>
+              <BackSquareBox 
+              key={index} className="square" num={item}></BackSquareBox>
             );
           })}
           <div className="container">

@@ -5,7 +5,7 @@ export default function Safari3D() {
   const rendering = () => {
     const result = [];
     for (let i = 0; i < 36; i++) {
-      result.push(<CircleLine num={i}></CircleLine>);
+      result.push(<CircleLine key={i} num={i}></CircleLine>);
     }
     return result;
   };

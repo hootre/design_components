@@ -19,6 +19,7 @@ export const MagicIndicator_1: VFC = () => {
           {itemList.map((item, index) => {
             return (
               <ListItem
+                key={index}
                 id={"" + index}
                 className={navItmeActiveState == index ? "active" : ""}
                 onClick={onToggleNavItemActive}

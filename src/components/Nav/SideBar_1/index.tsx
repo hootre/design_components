@@ -33,6 +33,7 @@ export const SideBar_1: VFC = () => {
           {itemList.map((item, index) => {
             return (
               <ListItem
+                key={index}
                 id={"" + index}
                 logoColor={logoColor[index]}
                 className={navItmeActiveState == index ? "active" : ""}

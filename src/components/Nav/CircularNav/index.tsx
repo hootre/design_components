@@ -47,6 +47,7 @@ export const CircularNav: VFC = () => {
         {itemList.map((item, index) => {
           return (
             <ListItem
+              key={index}
               id={"" + index}
               num={index}
               length={itemList.length}
