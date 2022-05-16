@@ -13,6 +13,7 @@ import { Gm_Button_1 } from "../components/Glassmorphism/Gm_Button_1";
 import { Gm_Calculator } from "../components/Glassmorphism/Gm_Calculator";
 import { Gm_CardHover } from "../components/Glassmorphism/Gm_CardHover";
 import { Gm_TransitionIcon } from "../components/Glassmorphism/Gm_TransitionIcon";
+import { Gm_ResMenu } from "../components/Glassmorphism/Gm_ResMenu";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -108,9 +109,9 @@ const Home: VFC<{}> = () => {
       <ContentLayout
         height={700}
         num={14}
-        title="Real Glassmorphism Card Hover Effects"
+        title="Build A Responsive Glassmorphism"
       >
-        <Gm_TransitionIcon />
+        <Gm_ResMenu />
       </ContentLayout>
     </>
   );
