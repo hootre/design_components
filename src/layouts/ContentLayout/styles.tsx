@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 export const Section_contaioner = styled.section`
   height: 30rem;
   padding: 2rem;
-
   header {
     display: inline;
   }
@@ -15,6 +14,7 @@ export const Section_contaioner = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
   }
   .titleNum {
     color: #fff;

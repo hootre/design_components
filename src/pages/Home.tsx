@@ -14,6 +14,7 @@ import { Gm_Calculator } from "../components/Glassmorphism/Gm_Calculator";
 import { Gm_CardHover } from "../components/Glassmorphism/Gm_CardHover";
 import { Gm_TransitionIcon } from "../components/Glassmorphism/Gm_TransitionIcon";
 import { Gm_ResMenu } from "../components/Glassmorphism/Gm_ResMenu";
+import { Gm_CardHover2 } from "../components/Glassmorphism/Gm_CardHover2";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -112,6 +113,13 @@ const Home: VFC<{}> = () => {
         title="Build A Responsive Glassmorphism"
       >
         <Gm_ResMenu />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={15}
+        title="Creative Our Team Section Using"
+      >
+        <Gm_CardHover2 />
       </ContentLayout>
     </>
   );
