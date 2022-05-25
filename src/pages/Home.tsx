@@ -15,6 +15,9 @@ import { Gm_CardHover } from "../components/Glassmorphism/Gm_CardHover";
 import { Gm_TransitionIcon } from "../components/Glassmorphism/Gm_TransitionIcon";
 import { Gm_ResMenu } from "../components/Glassmorphism/Gm_ResMenu";
 import { Gm_CardHover2 } from "../components/Glassmorphism/Gm_CardHover2";
+import { List } from "../components/3DList";
+import { ChangeButton } from "../components/ChangeButton";
+import { Smoking } from "../components/Smoking";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -120,6 +123,27 @@ const Home: VFC<{}> = () => {
         title="Creative Our Team Section Using"
       >
         <Gm_CardHover2 />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={16}
+        title="Creat 3D List"
+      >
+        <List />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={17}
+        title="Creat ChangeButton"
+      >
+        <ChangeButton />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={18}
+        title="Cigarettes have been with me for half of my life..."
+      >
+        <Smoking />
       </ContentLayout>
     </>
   );

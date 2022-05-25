@@ -6,6 +6,8 @@ type Props = {
 
 export const Container = styled.div`
     position: relative;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +15,16 @@ export const Container = styled.div`
             position : relative;
             transform : skewY(-15deg);
         }
-}`
+    }
+    .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+`;
 
 export const Item = styled.li<Props>`
     position : relative;
@@ -72,4 +83,4 @@ export const Item = styled.li<Props>`
     &:last-child:after{
         box-shadow : -120px 120px 20px rgba(0,0,0,0.25);
     }
-`
+`;

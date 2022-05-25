@@ -1,5 +1,13 @@
 import styled from "@emotion/styled";
 
+export const Background = styled.div`
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
 export const Container = styled.div`
     position : relative;
     width : 0;
@@ -22,6 +30,14 @@ export const Container = styled.div`
         opacity : 0;
         transition : 0.5s;
     }
+    .container {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     .content{
         min-width : 400px;
         padding : 40px;
@@ -35,7 +51,7 @@ export const Container = styled.div`
         height : 400px;
         transition-delay : 0.5s;
         .toggleBtn{
-            bottom : -90px;
+            bottom : -160px;
             transform : rotate(135deg);
             background : #ff5a57;
         }
@@ -51,13 +67,14 @@ export const Container = styled.div`
     }
         .toggleBtn{
             position : absolute;
-            bottom : -20px;
+            bottom : 100px;
             min-width : 60px;
             height : 60px;
             background : #0bcf9c;
             border-radius : 50%;
             cursor : pointer;
             transition : 0.5s;
+            text-align: center;
             &:before{
                 content : '+';
                 font-size : 2.5em;

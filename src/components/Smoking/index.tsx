@@ -1,8 +1,8 @@
 import React from "react";
-import './Smoking.tsx'
-import { Container , Item} from "./Smoking.tsx";
+import './styles'
+import { Container , Item} from "./styles";
 
-function Smoking() {
+export const Smoking= () => {
   const rendering = () => {
     const result = [];
     for (let i = 0; i < 10; i++){
@@ -12,11 +12,11 @@ function Smoking() {
   }
   return (
     <Container>
-      <div className="cigarette">
-        {rendering()}
+      <div className="container">
+        <div className="cigarette">
+          {rendering()}
+        </div>
       </div>
     </Container>
   );
 }
-
-export default Smoking;
