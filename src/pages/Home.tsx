@@ -18,6 +18,7 @@ import { Gm_CardHover2 } from "../components/Glassmorphism/Gm_CardHover2";
 import { List } from "../components/3DList";
 import { ChangeButton } from "../components/ChangeButton";
 import { Smoking } from "../components/Smoking";
+import { Bubbles } from "../components/Bubbles";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -144,6 +145,13 @@ const Home: VFC<{}> = () => {
         title="Cigarettes have been with me for half of my life..."
       >
         <Smoking />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={19}
+        title="Test"
+      >
+        <Bubbles/>
       </ContentLayout>
     </>
   );
