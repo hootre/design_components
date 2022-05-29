@@ -1,14 +1,14 @@
 import styled from "@emotion/styled";
 
-export const Background = styled.div`
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`
-export const Container = styled.div`
+export const ChangeButtonBox = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const Content = styled.div`
     position : relative;
     width : 0;
     height : 0;
@@ -38,7 +38,7 @@ export const Container = styled.div`
         align-items: center;
         flex-wrap: wrap;
     }
-    .content{
+    .textArea{
         min-width : 400px;
         padding : 40px;
         color : #fff;
@@ -55,7 +55,7 @@ export const Container = styled.div`
             transform : rotate(135deg);
             background : #ff5a57;
         }
-        .content{    
+        .textArea{    
             opacity : 1;
             transition-delay : 0.5s;
             transform : scale(1);
@@ -82,4 +82,4 @@ export const Container = styled.div`
             }
         }
     
-}`
+}`;
