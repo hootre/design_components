@@ -19,6 +19,7 @@ import { List } from "../components/3DList";
 import { ChangeButton } from "../components/ChangeButton";
 import { Smoking } from "../components/Smoking";
 import { Bubbles } from "../components/Bubbles";
+import { Profile } from "../components/Profile";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -125,18 +126,10 @@ const Home: VFC<{}> = () => {
       >
         <Gm_CardHover2 />
       </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={16}
-        title="Creat 3D List"
-      >
+      <ContentLayout height={700} num={16} title="Creat 3D List">
         <List />
       </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={17}
-        title="Creat ChangeButton"
-      >
+      <ContentLayout height={700} num={17} title="Creat ChangeButton">
         <ChangeButton />
       </ContentLayout>
       <ContentLayout
@@ -146,12 +139,11 @@ const Home: VFC<{}> = () => {
       >
         <Smoking />
       </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={19}
-        title="Test"
-      >
-        <Bubbles/>
+      <ContentLayout height={700} num={19} title="BackGround Bubbles">
+        <Bubbles />
+      </ContentLayout>
+      <ContentLayout height={700} num={20} title="Create Profile Only Css">
+        <Profile />
       </ContentLayout>
     </>
   );
