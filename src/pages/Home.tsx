@@ -20,6 +20,7 @@ import { ChangeButton } from "../components/ChangeButton";
 import { Smoking } from "../components/Smoking";
 import { Bubbles } from "../components/Bubbles";
 import { Profile } from "../components/Profile";
+import { GlowingButton } from "../components/GlowingButton";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -144,6 +145,9 @@ const Home: VFC<{}> = () => {
       </ContentLayout>
       <ContentLayout height={700} num={20} title="Create Profile Only Css">
         <Profile />
+      </ContentLayout>
+      <ContentLayout height={700} num={21} title="Test">
+        <GlowingButton />
       </ContentLayout>
     </>
   );
