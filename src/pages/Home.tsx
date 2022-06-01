@@ -21,6 +21,7 @@ import { Smoking } from "../components/Smoking";
 import { Bubbles } from "../components/Bubbles";
 import { Profile } from "../components/Profile";
 import { GlowingButton } from "../components/GlowingButton";
+import { ListArrow } from "../components/ListArrow";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -146,8 +147,19 @@ const Home: VFC<{}> = () => {
       <ContentLayout height={700} num={20} title="Create Profile Only Css">
         <Profile />
       </ContentLayout>
-      <ContentLayout height={700} num={21} title="Test">
+      <ContentLayout
+        height={700}
+        num={21}
+        title="Implement hover effect using only css"
+      >
         <GlowingButton />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={22}
+        title="Create a list arrow using a function"
+      >
+        <ListArrow />
       </ContentLayout>
     </>
   );
