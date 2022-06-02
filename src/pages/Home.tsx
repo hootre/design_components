@@ -22,6 +22,7 @@ import { Bubbles } from "../components/Bubbles";
 import { Profile } from "../components/Profile";
 import { GlowingButton } from "../components/GlowingButton";
 import { ListArrow } from "../components/ListArrow";
+import { HoverEffect } from "../components/HoverEffect";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -160,6 +161,13 @@ const Home: VFC<{}> = () => {
         title="Create a list arrow using a function"
       >
         <ListArrow />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={23}
+        title="CSS Animation & Hover Effects"
+      >
+        <HoverEffect />
       </ContentLayout>
     </>
   );
