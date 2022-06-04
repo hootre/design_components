@@ -23,6 +23,7 @@ import { Profile } from "../components/Profile";
 import { GlowingButton } from "../components/GlowingButton";
 import { ListArrow } from "../components/ListArrow";
 import { HoverEffect } from "../components/HoverEffect";
+import { CircularProgress } from "../components/CircularProgress";
 
 const itemComponents = {
   0: <CircularNav />,
@@ -168,6 +169,13 @@ const Home: VFC<{}> = () => {
         title="CSS Animation & Hover Effects"
       >
         <HoverEffect />
+      </ContentLayout>
+      <ContentLayout
+        height={700}
+        num={24}
+        title="Animated Circular Progress Bar Using Html CSS Only"
+      >
+        <CircularProgress />
       </ContentLayout>
     </>
   );
