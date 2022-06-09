@@ -1,8 +1,8 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 type Props = {
-  num: number
-}
+  num: number;
+};
 
 export const SmokingBox = styled.div`
   width: 100%;
@@ -23,11 +23,13 @@ export const SmokingBox = styled.div`
       transform: perspective(1000px) rotateX(360deg);
     }
   }
-`
+`;
 
 export const Item = styled.span<Props>`
   position: absolute;
   color: #fff;
+  top: 50%;
+  left: 50%;
   font-size: 1.35em;
   font-weight: 900;
   text-transform: uppercase;
@@ -50,4 +52,4 @@ export const Item = styled.span<Props>`
         20px 0 #888, 24px 0 #999;
     }
   }
-`
+`;

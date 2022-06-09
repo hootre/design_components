@@ -1,29 +1,29 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 type Props = {
   num: number;
 };
 
 export const ListBox = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
     position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        ul{
-            position : relative;
-            transform : skewY(-15deg);
-        }
-    }
-    .container {
+    transform: skewY(-15deg);
+  }
+
+  .container {
     position: relative;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    }
+  }
 `;
 
 export const Item = styled.li<Props>`
@@ -32,7 +32,7 @@ export const Item = styled.li<Props>`
   width: 200px;
   background: #3e3f46;
   padding: 15px;
-  z-index: ${(Props) => Props.num};
+  z-index: ${Props => Props.num};
   transition: 0.5s;
   a {
     text-decoration: none;
@@ -50,7 +50,7 @@ export const Item = styled.li<Props>`
     color: #fff;
   }
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: -40px;
@@ -65,7 +65,7 @@ export const Item = styled.li<Props>`
     background: #1f5378;
   }
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     top: -40px;
     left: 0;

@@ -46,7 +46,7 @@ export const Content = styled.div`
     transition: 0.5s;
     transform: scale(0);
   }
-  .active {
+  &.active {
     width: 400px;
     height: 400px;
     transition-delay: 0.5s;
@@ -61,7 +61,7 @@ export const Content = styled.div`
       transform: scale(1);
     }
   }
-  .active:before {
+  &.active:before {
     opacity: 1;
     transition-delay: 0.5s;
   }
