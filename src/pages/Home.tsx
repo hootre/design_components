@@ -1,182 +1,94 @@
-import { VFC } from "react";
-import { CircularNav } from "../components/Nav/CircularNav";
-import ContentLayout from "../layouts/ContentLayout";
-import Safari3D from "../components/Logo/Safari3D";
-import { DotsMenu } from "../components/Menu/DotsMenu";
-import { MagicIndicator_1 } from "../components/Menu/MagicIndicator_1";
-import { SideBar_1 } from "../components/Nav/SideBar_1";
-import { ClaymorphismList_1 } from "../components/List/ClaymorphismList_1";
-import { Card_1 } from "../components/Card/Card_1";
-import { Gm_LoginForm } from "../components/Glassmorphism/Gm_LoginForm";
-import { CircleLoader } from "../components/Animation/CirCleLoader";
-import { Gm_Button_1 } from "../components/Glassmorphism/Gm_Button_1";
-import { Gm_Calculator } from "../components/Glassmorphism/Gm_Calculator";
-import { Gm_CardHover } from "../components/Glassmorphism/Gm_CardHover";
-import { Gm_TransitionIcon } from "../components/Glassmorphism/Gm_TransitionIcon";
-import { Gm_ResMenu } from "../components/Glassmorphism/Gm_ResMenu";
-import { Gm_CardHover2 } from "../components/Glassmorphism/Gm_CardHover2";
-import { List } from "../components/3DList";
-import { ChangeButton } from "../components/ChangeButton";
-import { Smoking } from "../components/Smoking";
-import { Bubbles } from "../components/Bubbles";
-import { Profile } from "../components/Profile";
-import { GlowingButton } from "../components/GlowingButton";
-import { ListArrow } from "../components/ListArrow";
-import { HoverEffect } from "../components/HoverEffect";
-import { CircularProgress } from "../components/CircularProgress";
+import { VFC } from 'react';
+import { CircularNav } from '../components/Nav/1.CircularNav';
+import ContentLayout from '../layouts/ContentLayout';
+import Safari3D from '../components/Logo/2.Safari3D';
+import { DotsMenu } from '../components/Menu/3.DotsMenu';
+import { MagicIndicator_1 } from '../components/Menu/4.MagicIndicator_1';
+import { SideBar_1 } from '../components/Nav/5.SideBar_1';
+import { ClaymorphismList_1 } from '../components/List/6.ClaymorphismList_1';
+import { Card_1 } from '../components/Card/7.Card_1';
+import { Gm_LoginForm } from '../components/Glassmorphism/8.Gm_LoginForm';
+import { CircleLoader } from '../components/Animation/9.CirCleLoader';
+import { Gm_Button_1 } from '../components/Glassmorphism/10.Gm_Button_1';
+import { Gm_Calculator } from '../components/Glassmorphism/11.Gm_Calculator';
+import { Gm_CardHover } from '../components/Glassmorphism/12.Gm_CardHover';
+import { Gm_TransitionIcon } from '../components/Glassmorphism/13.Gm_TransitionIcon';
+import { Gm_ResMenu } from '../components/Glassmorphism/14.Gm_ResMenu';
+import { Gm_CardHover2 } from '../components/Glassmorphism/15.Gm_CardHover2';
+import { List } from '../components/16.3DList';
+import { ChangeButton } from '../components/17.ChangeButton';
+import { Smoking } from '../components/18.Smoking';
+import { Bubbles } from '../components/19.Bubbles';
+import { Profile } from '../components/20.Profile';
+import { GlowingButton } from '../components/21.GlowingButton';
+import { ListArrow } from '../components/22.ListArrow';
+import { HoverEffect } from '../components/23.HoverEffect';
+import { CircularProgress } from '../components/24.CircularProgress';
 
-const itemComponents = {
-  0: <CircularNav />,
+const itemTitle = [
+  'Animated Circular Navigation Menu Magic Indicator',
+  'CSS Only 3D Safari Logo Animation Effects on Hover',
+  'CSS 9 Dots Menu | Html CSS Icon Hover Effects',
+  'Magic Navigation Menu Indicator',
+  'Sidebar Menu using Html CSS & Javascript',
+  'Claymorphism List Hover Effects',
+  'CSS Responsive Card Hover Effects',
+  'Glassmorphism Login Form using Html & CSS ',
+  'Glassmorphism Login Form using Html & CSS ',
+  'CSS Glassmorphism Button Hover Effects',
+  'How to make Calculator With JavaScript',
+  'Responsive Glassmorphism Card Hover Effects',
+  'Creative Z-Index Transition Icon Hover Effects',
+  'Build A Responsive Glassmorphism',
+  'Creative Our Team Section Using',
+  'Creat 3D List',
+  'Creat ChangeButton',
+  'Cigarettes have been with me for half of my life...',
+  'BackGround Bubbles',
+  'Create Profile Only Css',
+  'Implement hover effect using only css',
+  'Create a list arrow using a function',
+  'CSS Animation & Hover Effects',
+  'Animated Circular Progress Bar Using Html CSS Only',
+];
+const itemComponents: any = {
+  1: <CircularNav />,
+  2: <Safari3D />,
+  3: <DotsMenu />,
+  4: <MagicIndicator_1 />,
+  5: <SideBar_1 />,
+  6: <ClaymorphismList_1 />,
+  7: <Card_1 />,
+  8: <Gm_LoginForm />,
+  9: <CircleLoader />,
+  10: <Gm_Button_1 />,
+  11: <Gm_Calculator />,
+  12: <Gm_CardHover />,
+  13: <Gm_TransitionIcon />,
+  14: <Gm_ResMenu />,
+  15: <Gm_CardHover2 />,
+  16: <List />,
+  17: <ChangeButton />,
+  18: <Smoking />,
+  19: <Bubbles />,
+  20: <Profile />,
+  21: <GlowingButton />,
+  22: <ListArrow />,
+  23: <HoverEffect />,
+  24: <CircularProgress />,
 };
 
 const Home: VFC<{}> = () => {
+  const keys = Object.keys(itemComponents);
   return (
     <>
-      <ContentLayout
-        num={1}
-        title="Animated Circular Navigation Menu Magic Indicator"
-      >
-        <CircularNav />
-      </ContentLayout>
-      <ContentLayout
-        num={2}
-        title="CSS Only 3D Safari Logo Animation Effects on Hover"
-      >
-        <Safari3D />
-      </ContentLayout>
-      <ContentLayout
-        num={3}
-        title="CSS 9 Dots Menu | Html CSS Icon Hover Effects"
-      >
-        <DotsMenu />
-      </ContentLayout>
-      <ContentLayout num={4} title="Magic Navigation Menu Indicator">
-        <MagicIndicator_1 />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={5}
-        title="Sidebar Menu using Html CSS & Javascript"
-      >
-        <SideBar_1 />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={6}
-        title="Claymorphism List Hover Effects"
-      >
-        <ClaymorphismList_1 />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={7}
-        title="CSS Responsive Card Hover Effects"
-      >
-        <Card_1 />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={8}
-        title="Glassmorphism Login Form using Html & CSS "
-      >
-        <Gm_LoginForm />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={9}
-        title="Glassmorphism Login Form using Html & CSS "
-      >
-        <CircleLoader />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={10}
-        title="CSS Glassmorphism Button Hover Effects"
-      >
-        <Gm_Button_1 />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={11}
-        title="How to make Calculator With JavaScript"
-      >
-        <Gm_Calculator />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={12}
-        title="Responsive Glassmorphism Card Hover Effects"
-      >
-        <Gm_CardHover />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={13}
-        title="Creative Z-Index Transition Icon Hover Effects"
-      >
-        <Gm_TransitionIcon />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={14}
-        title="Build A Responsive Glassmorphism"
-      >
-        <Gm_ResMenu />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={15}
-        title="Creative Our Team Section Using"
-      >
-        <Gm_CardHover2 />
-      </ContentLayout>
-      <ContentLayout height={700} num={16} title="Creat 3D List">
-        <List />
-      </ContentLayout>
-      <ContentLayout height={700} num={17} title="Creat ChangeButton">
-        <ChangeButton />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={18}
-        title="Cigarettes have been with me for half of my life..."
-      >
-        <Smoking />
-      </ContentLayout>
-      <ContentLayout height={700} num={19} title="BackGround Bubbles">
-        <Bubbles />
-      </ContentLayout>
-      <ContentLayout height={700} num={20} title="Create Profile Only Css">
-        <Profile />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={21}
-        title="Implement hover effect using only css"
-      >
-        <GlowingButton />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={22}
-        title="Create a list arrow using a function"
-      >
-        <ListArrow />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={23}
-        title="CSS Animation & Hover Effects"
-      >
-        <HoverEffect />
-      </ContentLayout>
-      <ContentLayout
-        height={700}
-        num={24}
-        title="Animated Circular Progress Bar Using Html CSS Only"
-      >
-        <CircularProgress />
-      </ContentLayout>
+      {keys.map((item, index) => {
+        return (
+          <ContentLayout height={700} num={index} title={itemTitle[index]}>
+            {itemComponents[item]}
+          </ContentLayout>
+        );
+      })}
     </>
   );
 };
