@@ -1,15 +1,8 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 type ListProps = {
   num: number;
 };
 export const Gm_ResMenuBox = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
   .container {
     .BGimg {
       position: absolute;
@@ -83,7 +76,7 @@ export const Gm_ResMenuBox = styled.div`
           top: 24px;
         }
         &:before {
-          content: "Menu";
+          content: 'Menu';
           position: absolute;
           right: 45px;
           text-transform: uppercase;
@@ -118,7 +111,7 @@ export const Gm_ResMenuBox = styled.div`
         font-size: 5vw;
         line-height: 0.55em;
         text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-        font-family: "Dancing Script", cursive;
+        font-family: 'Dancing Script', cursive;
         span {
           font-size: 0.2em;
           font-weight: 300;
@@ -207,7 +200,7 @@ export const Gm_ResMenuBox = styled.div`
           left: 50%;
         }
         &:before {
-          content: "close";
+          content: 'close';
         }
       }
       .glass {
@@ -268,10 +261,10 @@ export const Gm_ResMenuBox = styled.div`
 `;
 export const ListItem = styled.li<ListProps>`
   transition: 0.5s;
-  transition-delay: calc(0.2s * ${(props) => props.num});
+  transition-delay: calc(0.2s * ${props => props.num});
 `;
 export const ListItem2 = styled.li<ListProps>`
   transition: 0.5s;
   transform: translateX(200px);
-  transition-delay: calc(0.2s * ${(props) => props.num});
+  transition-delay: calc(0.2s * ${props => props.num});
 `;

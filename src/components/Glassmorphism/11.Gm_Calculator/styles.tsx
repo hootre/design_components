@@ -1,17 +1,11 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 type ListProps = {
   num: number;
 };
 export const Gm_CalculatorBox = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -21,7 +15,7 @@ export const Gm_CalculatorBox = styled.div`
     clip-path: circle(22% at 30% 20%);
   }
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;

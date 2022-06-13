@@ -1,16 +1,9 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Gm_TransitionIconBox = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
   section {
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       width: 100%;
       height: 50%;
@@ -83,7 +76,7 @@ export const Gm_TransitionIconBox = styled.div`
             }
           }
           &:before {
-            content: "";
+            content: '';
             position: absolute;
             top: 0;
             left: 0;

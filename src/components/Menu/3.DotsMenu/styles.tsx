@@ -1,17 +1,11 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 type ListProps = {
-  i: number
-  x: number
-  y: number
-}
+  i: number;
+  x: number;
+  y: number;
+};
 export const DotsMenuBox = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   .navigation {
     position: relative;
     width: 70px;
@@ -30,7 +24,7 @@ export const DotsMenuBox = styled.div`
       transition-delay: 0s;
     }
   }
-`
+`;
 export const MenuItem = styled.span<ListProps>`
   position: absolute;
   width: 7px;
@@ -61,4 +55,4 @@ export const MenuItem = styled.span<ListProps>`
       }
     }
   }
-`
+`;

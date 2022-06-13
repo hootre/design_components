@@ -1,18 +1,12 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 type ListProps = {
   num: number;
 };
 export const Gm_CardHover2Box = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #161623;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -22,7 +16,7 @@ export const Gm_CardHover2Box = styled.div`
     clip-path: circle(30% at right 70%);
   }
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -119,5 +113,5 @@ export const Gm_CardHover2Box = styled.div`
 export const Gm_CardHover2Box_ListItem = styled.li<ListProps>`
   transform: translateY(40px);
   transition: 0.5s;
-  transition-delay: calc(0.1s * ${(props) => props.num});
+  transition-delay: calc(0.1s * ${props => props.num});
 `;

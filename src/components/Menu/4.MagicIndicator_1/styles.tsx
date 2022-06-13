@@ -1,13 +1,7 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 type ListProps = {};
 export const MagicIndicatorBox = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   .navigation {
     position: relative;
     width: 400px;
@@ -31,7 +25,7 @@ export const MagicIndicatorBox = styled.div`
       z-index: 1;
       transition: 0.5s;
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         top: 0px;
         left: -25px;
@@ -42,7 +36,7 @@ export const MagicIndicatorBox = styled.div`
         box-shadow: 15px 18px #fff;
       }
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0px;
         right: -25px;

@@ -1,16 +1,10 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 type ListProps = {
   num: number;
 };
 export const Gm_GlassBox = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: url("https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url('https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-position: center;
   background-size: cover;
   overflow: hidden;

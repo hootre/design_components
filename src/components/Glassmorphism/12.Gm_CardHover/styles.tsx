@@ -1,15 +1,9 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 type ListProps = {
   num: number;
 };
 export const Gm_CardHoverBox = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   .container {
     position: relative;
     width: 400px;

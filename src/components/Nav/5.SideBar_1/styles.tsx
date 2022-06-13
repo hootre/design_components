@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 type ListProps = {
   logoColor: string;
@@ -26,13 +26,13 @@ export const ListItem = styled.li<ListProps>`
       border-radius: 10px;
       color: #222;
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         top: 10px;
         left: 0;
         width: 100%;
         height: 100%;
-        background: ${(props) => props.logoColor};
+        background: ${props => props.logoColor};
         filter: blur(8px);
         opacity: 0;
         transition: 0.5s;
@@ -56,22 +56,16 @@ export const ListItem = styled.li<ListProps>`
       .icon {
         color: #fff;
         z-index: 10;
-        background: ${(props) => props.logoColor};
-        box-shadow: 2px 10px 15px ${(props) => props.logoColor};
+        background: ${props => props.logoColor};
+        box-shadow: 2px 10px 15px ${props => props.logoColor};
       }
       .text {
-        color: ${(props) => props.logoColor};
+        color: ${props => props.logoColor};
       }
     }
   }
 `;
 export const SideBar_1Box = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   .navigation {
     position: absolute;
     inset: 20px 0 20px 20px;
@@ -111,7 +105,7 @@ export const SideBar_1Box = styled.div`
       justify-content: left;
       padding: 0 23px;
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         width: 30px;
         height: 2px;
@@ -120,7 +114,7 @@ export const SideBar_1Box = styled.div`
         transition: 0.5s;
       }
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         width: 30px;
         height: 2px;

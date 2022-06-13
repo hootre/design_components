@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Section_contaioner = styled.section`
   height: 30rem;
@@ -25,5 +25,14 @@ export const Section_contaioner = styled.section`
   .titleText {
     font-size: 1.1rem;
     margin-left: 1rem;
+  }
+  .componentContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
 `;

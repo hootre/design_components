@@ -1,15 +1,9 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 type ListProps = {
-  num: number
-}
+  num: number;
+};
 export const LoginFormBox = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
   section {
     display: flex;
@@ -136,7 +130,7 @@ export const LoginFormBox = styled.div`
       }
     }
   }
-`
+`;
 export const BackSquareBox = styled.div<ListProps>`
   position: absolute;
   backdrop-filter: blur(5px);
@@ -188,4 +182,4 @@ export const BackSquareBox = styled.div<ListProps>`
     width: 60px;
     height: 60px;
   }
-`
+`;

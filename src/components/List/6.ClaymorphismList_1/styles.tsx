@@ -1,13 +1,7 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 type ListProps = {};
 export const ClaymorphismList_1Box = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   .container {
     position: relative;
     width: 350px;
@@ -15,9 +9,8 @@ export const ClaymorphismList_1Box = styled.div`
     background: #2f363e;
     border-radius: 30px;
     padding: 50px;
-    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
-      10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-      inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25), 10px 10px 70px rgba(0, 0, 0, 0.25),
+      inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.2),
       inset -5px -5px 15px rgba(0, 0, 0, 0.75);
     h3 {
       color: #fff;
@@ -30,14 +23,13 @@ export const ClaymorphismList_1Box = styled.div`
       margin: 20px 0;
       cursor: pointer;
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         width: 45px;
         height: 45px;
         background: #1f83f2;
         border-radius: 22.5px;
-        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
-          inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25), inset 2px 2px 5px rgba(255, 255, 255, 0.25),
           inset -3px -3px 5px rgba(0, 0, 0, 0.5);
         transition: 0.5s;
       }
@@ -51,7 +43,7 @@ export const ClaymorphismList_1Box = styled.div`
         border-radius: 50%;
         margin-right: 10px;
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           width: 30px;
           height: 30px;

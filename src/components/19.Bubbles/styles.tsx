@@ -1,16 +1,12 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 type Props = {
-  num: number
-}
+  num: number;
+};
 
 export const BubblesBox = styled.div`
-  position: relative;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #0c192c;
   overflow: hidden;
   .container {
@@ -27,7 +23,7 @@ export const BubblesBox = styled.div`
       display: flex;
     }
   }
-`
+`;
 
 export const Item = styled.span<Props>`
   display: block;
@@ -52,4 +48,4 @@ export const Item = styled.span<Props>`
       transform: translateY(-10vh) scale(1);
     }
   }
-`
+`;

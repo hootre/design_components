@@ -1,15 +1,9 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 type ListProps = {
   num: number;
 };
 export const Button_1Box = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   .container {
     width: 600px;
     display: flex;
@@ -43,23 +37,19 @@ export const Button_1Box = styled.div`
         transition: 0.5s;
         backdrop-filter: blur(15px);
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           top: 0;
           left: 0;
           width: 50%;
           height: 100%;
-          background: linear-gradient(
-            to left,
-            rgba(255, 255, 255, 0.15),
-            transparent
-          );
+          background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
           transform: skewX(45deg) translateX(0);
           transition: 0.5s;
         }
       }
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -71,7 +61,7 @@ export const Button_1Box = styled.div`
         transition: 0.5s;
       }
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -108,20 +98,17 @@ export const Button_1Box = styled.div`
       &:nth-of-type(1):before,
       &:nth-of-type(1):after {
         background: #ff1f71;
-        box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
-          0 0 60px #ff1f71;
+        box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71, 0 0 60px #ff1f71;
       }
       &:nth-of-type(2):before,
       &:nth-of-type(2):after {
         background: #2bd2ff;
-        box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff,
-          0 0 60px #2bd2ff;
+        box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff, 0 0 60px #2bd2ff;
       }
       &:nth-of-type(3):before,
       &:nth-of-type(3):after {
         background: #1eff45;
-        box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
-          0 0 60px #1eff45;
+        box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45, 0 0 60px #1eff45;
       }
     }
   }

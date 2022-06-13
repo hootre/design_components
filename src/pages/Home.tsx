@@ -8,7 +8,6 @@ import { SideBar_1 } from '../components/Nav/5.SideBar_1';
 import { ClaymorphismList_1 } from '../components/List/6.ClaymorphismList_1';
 import { Card_1 } from '../components/Card/7.Card_1';
 import { Gm_LoginForm } from '../components/Glassmorphism/8.Gm_LoginForm';
-import { CircleLoader } from '../components/Animation/9.CirCleLoader';
 import { Gm_Button_1 } from '../components/Glassmorphism/10.Gm_Button_1';
 import { Gm_Calculator } from '../components/Glassmorphism/11.Gm_Calculator';
 import { Gm_CardHover } from '../components/Glassmorphism/12.Gm_CardHover';
@@ -19,11 +18,14 @@ import { List } from '../components/16.3DList';
 import { ChangeButton } from '../components/17.ChangeButton';
 import { Smoking } from '../components/18.Smoking';
 import { Bubbles } from '../components/19.Bubbles';
-import { Profile } from '../components/20.Profile';
+import { Profile } from '../components/Card/20.Profile';
 import { GlowingButton } from '../components/21.GlowingButton';
 import { ListArrow } from '../components/22.ListArrow';
 import { HoverEffect } from '../components/23.HoverEffect';
 import { CircularProgress } from '../components/24.CircularProgress';
+import { CircleLoader } from '../components/Animation/9.CirCleLoader';
+import { SearchInput } from '../components/25.SearchInput';
+import { DropMenu } from '../components/26.DropMenu';
 
 const itemTitle = [
   'Animated Circular Navigation Menu Magic Indicator',
@@ -50,6 +52,8 @@ const itemTitle = [
   'Create a list arrow using a function',
   'CSS Animation & Hover Effects',
   'Animated Circular Progress Bar Using Html CSS Only',
+  'Instagram Search Input',
+  'Custom Select Menu Dropdown using Html CSS',
 ];
 const itemComponents: any = {
   1: <CircularNav />,
@@ -76,6 +80,8 @@ const itemComponents: any = {
   22: <ListArrow />,
   23: <HoverEffect />,
   24: <CircularProgress />,
+  25: <SearchInput />,
+  26: <DropMenu />,
 };
 
 const Home: VFC<{}> = () => {
@@ -84,7 +90,7 @@ const Home: VFC<{}> = () => {
     <>
       {keys.map((item, index) => {
         return (
-          <ContentLayout height={700} num={index} title={itemTitle[index]}>
+          <ContentLayout height={700} num={index + 1} title={itemTitle[index]}>
             {itemComponents[item]}
           </ContentLayout>
         );
