@@ -27,6 +27,7 @@ import { CircleLoader } from '../components/Animation/9.CirCleLoader';
 import { SearchInput } from '../components/25.SearchInput';
 import { DropMenu } from '../components/26.DropMenu';
 import { IconList } from '../components/27.CSSIconHover';
+import { SideDashbord } from '../components/28.SideDashboard';
 
 const itemTitle = [
   'Animated Circular Navigation Menu Magic Indicator',
@@ -55,7 +56,8 @@ const itemTitle = [
   'Animated Circular Progress Bar Using Html CSS Only',
   'Instagram Search Input',
   'Custom Select Menu Dropdown using Html CSS',
-  'Custom Select Menu Dropdown using Html CSS',
+  'CSS Icon Hover Effects with Text And Gradient Drop Shadow',
+  'Dashboard Sidebar Menu using Html CSS ',
 ];
 const itemComponents: any = {
   1: <CircularNav />,
@@ -85,6 +87,7 @@ const itemComponents: any = {
   25: <SearchInput />,
   26: <DropMenu />,
   27: <IconList />,
+  28: <SideDashbord />,
 };
 
 const Home: VFC<{}> = () => {

@@ -7,7 +7,6 @@ export const ChangeButton = () => {
   const [toggle, setToggle] = useState(false);
   const clickedToggle = () => {
     setToggle(prev => !prev);
-    console.log(toggle);
   };
   return (
     <Content className={!toggle ? '' : 'active'}>
