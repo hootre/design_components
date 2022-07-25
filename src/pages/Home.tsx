@@ -29,6 +29,7 @@ import { DropMenu } from '../components/26.DropMenu';
 import { IconList } from '../components/27.CSSIconHover';
 import { SideDashbord } from '../components/28.SideDashboard';
 import { CircularNavigation } from '../components/29.CircularNavigation';
+import { IconHover } from '../components/30.LineIconHover';
 
 const itemTitle = [
   'Animated Circular Navigation Menu Magic Indicator',
@@ -60,6 +61,7 @@ const itemTitle = [
   'CSS Icon Hover Effects with Text And Gradient Drop Shadow',
   'Dashboard Sidebar Menu using Html CSS ',
   'Animated Circular Navigation Menu',
+  'CSS Magic Line Icon Hover Effects',
 ];
 const itemComponents: any = {
   1: <CircularNav />,
@@ -91,6 +93,7 @@ const itemComponents: any = {
   27: <IconList />,
   28: <SideDashbord />,
   29: <CircularNavigation />,
+  30: <IconHover />,
 };
 
 const Home: VFC<{}> = () => {
