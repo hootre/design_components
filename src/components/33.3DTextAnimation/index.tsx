@@ -1,4 +1,3 @@
-import { text } from '@fortawesome/fontawesome-svg-core';
 import React from 'react';
 import { TextAnimationBox, Item, Text } from './styles';
 

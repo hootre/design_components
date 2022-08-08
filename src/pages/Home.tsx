@@ -33,6 +33,7 @@ import { IconHover } from '../components/30.LineIconHover';
 import { FocusHover } from '../components/31.FocusHover';
 import { DigitalClock } from '../components/32.DigitalClock';
 import { TextAnimation } from '../components/33.3DTextAnimation';
+import { RangeSlider } from '../components/34.Slider';
 
 const itemTitle = [
   'Animated Circular Navigation Menu Magic Indicator',
@@ -68,6 +69,7 @@ const itemTitle = [
   'CSS Text Hover Transition Effects',
   'Amazing Working Analog and Digital Clock Design',
   'CSS Only 3D Text Animation Effects',
+  'CSS Neumorphism Custom Range Slider',
 ];
 const itemComponents: any = {
   1: <CircularNav />,
@@ -103,6 +105,7 @@ const itemComponents: any = {
   31: <FocusHover />,
   32: <DigitalClock />,
   33: <TextAnimation />,
+  34: <RangeSlider />,
 };
 
 const Home: VFC<{}> = () => {
